@@ -1,0 +1,191 @@
+#neutralinoapp {
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#neutralinoapp h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+#neutralinoapp > div {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+body{
+    background: #B993D6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    user-select: none;
+}
+
+.welcome{
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+
+
+/* From cssbuttons.io by @hannahyockel */
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 38px;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    background-color: #1DC9A0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 0.15s linear;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+   
+   }
+   
+   button:hover {
+    background-color: rgba(29, 201, 160, 0.08);
+    border-color: #1DC9A0;
+    color: #1DC9A0;
+    transform: translateY(-5px) scale(1.05);
+   }
+   
+   button:active {
+    background-color: transparent;
+    border-color: #1DC9A0;
+    color: #1DC9A0;
+    transform: translateY(5px) scale(0.95);
+   }
+   
+   button:disabled {
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #8E8E93;
+    border-color: #8E8E93;
+   }
+
+   button:visited{
+    outline: 0 !important;
+    border: 0;
+   }
+
+   button::selection{
+       color: none;
+   }
+
+.study-button, .work-button, .fun-button{
+    margin: auto;
+    display: block;
+}
+
+.study-button{
+    margin-top: 100px;
+    padding-right: 43px;
+    padding-left: 43px;
+}
+.work-button{
+    margin-top: 30px;
+    padding-right: 45px;
+    padding-left: 45px;
+}
+.fun-button{
+    margin-top: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+
+
+.switch {
+    --button-width: 3.5em;
+    --button-height: 2em;
+    --toggle-diameter: 1.5em;
+    --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+    --toggle-shadow-offset: 10px;
+    --toggle-wider: 3em;
+    --color-grey: #cccccc;
+    --color-green: #4296f4;
+    
+   }
+   
+   .slider {
+    display: inline-block;
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--color-grey);
+    border-radius: calc(var(--button-height) / 2);
+    position: relative;
+    transition: 0.3s all ease-in-out;
+    position:fixed; bottom:0;
+    right: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+   }
+   
+   .slider::after {
+    content: "";
+    display: inline-block;
+    width: var(--toggle-diameter);
+    height: var(--toggle-diameter);
+    background-color: #fff;
+    border-radius: calc(var(--toggle-diameter) / 2);
+    position: absolute;
+    top: var(--button-toggle-offset);
+    transform: translateX(var(--button-toggle-offset));
+    box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+    transition: 0.3s all ease-in-out;
+   }
+   
+   .switch input[type="checkbox"]:checked + .slider {
+    background-color: var(--color-green);
+   }
+   
+   .switch input[type="checkbox"]:checked + .slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+    box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+   }
+   
+   .switch input[type="checkbox"] {
+    display: none;
+   }
+   
+   .switch input[type="checkbox"]:active + .slider::after {
+    width: var(--toggle-wider);
+   }
+   
+   .switch input[type="checkbox"]:checked:active + .slider::after {
+    transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+   }
+   
+   .dm-text{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+    position:fixed; bottom:0;
+    right: 0;
+    margin-bottom: 50px;
+    margin-right: 10px;
+   }
